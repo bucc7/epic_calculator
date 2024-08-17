@@ -13,7 +13,7 @@ except AttributeError:
         root = True
 
 if root == False:
-    print("This program cannot run properly without administrator privileges.")
+    print("Segmentation fault")
     exit()
 
 # main
